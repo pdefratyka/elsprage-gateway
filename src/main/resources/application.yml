@@ -4,6 +4,11 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: elsprage-words
+          uri: lb://elsprage-words
+          predicates:
+            - Path=/words/**
       globalcors:
         corsConfigurations:
           '[/**]':
