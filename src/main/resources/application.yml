@@ -9,6 +9,10 @@ spring:
           uri: lb://elsprage-words
           predicates:
             - Path=/words/**
+        - id: elsprage-users
+          uri: lb://elsprage-users
+          predicates:
+            - Path=/users/**, /authentication/**
       globalcors:
         corsConfigurations:
           '[/**]':
