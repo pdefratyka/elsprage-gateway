@@ -8,7 +8,7 @@ spring:
         - id: elsprage-words
           uri: lb://elsprage-words
           predicates:
-            - Path=/words/**
+            - Path=/words/**, /languages/**
         - id: elsprage-users
           uri: lb://elsprage-users
           predicates:
