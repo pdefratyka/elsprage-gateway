@@ -8,7 +8,7 @@ spring:
         - id: elsprage-words
           uri: lb://elsprage-words
           predicates:
-            - Path=/words/**, /languages/**
+            - Path=/words/**, /languages/**, /packets/**
         - id: elsprage-users
           uri: lb://elsprage-users
           predicates:
@@ -21,3 +21,6 @@ spring:
             allowedMethods:
               - GET
               - POST
+              - DELETE
+              - PUT
+              - PATCH
