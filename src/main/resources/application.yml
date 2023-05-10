@@ -13,6 +13,10 @@ spring:
           uri: lb://elsprage-users
           predicates:
             - Path=/users/**, /authentication/**
+        - id: elsprage-learning
+          uri: lb://elsprage-learning
+          predicates:
+            - Path=/learning/**
       globalcors:
         corsConfigurations:
           '[/**]':
