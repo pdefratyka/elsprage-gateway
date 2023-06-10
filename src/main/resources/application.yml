@@ -16,7 +16,7 @@ spring:
         - id: elsprage-learning
           uri: lb://elsprage-learning
           predicates:
-            - Path=/learning/**
+            - Path=/learning/**, /games/**
       globalcors:
         corsConfigurations:
           '[/**]':
