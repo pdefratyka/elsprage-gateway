@@ -7,7 +7,7 @@
     <groupId>com.elsprage</groupId>
     <artifactId>gateway</artifactId>
     <packaging>jar</packaging>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <name>elsprage-gateway</name>
 
     <repositories>
